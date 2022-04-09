@@ -62,3 +62,22 @@ code {
   font-size: large;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+.projectContainer{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.projectItem{
+  width: 20%;
+  height: 10%;
+  padding-right: 10px;
+}
+@media only screen and (min-width: 300px) {
+  .projectItem{
+    width: 45%;
+    height: 55%;
+    padding-right: 10px;
+  }
+}
