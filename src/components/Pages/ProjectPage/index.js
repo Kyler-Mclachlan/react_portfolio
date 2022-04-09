@@ -3,7 +3,7 @@ import React from "react";
 export default function ProjectPage() {
     return (
       <div>
-        <h1>Main Page</h1>
+        <h1>PortfolioC</h1>
         <p>
           Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
           Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu

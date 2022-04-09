@@ -37,9 +37,28 @@ code {
   list-style-type: none;
   align-self: center;
   color: slateblue;
+  background-color: aliceblue;
+  padding: 22px;
+  padding-top: 2px;
+  padding-bottom: 7px;
+  border-radius: 55%;
+  margin-top: 10px;
 }
 
 .nav-link{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-decoration: none;
   color: slateblue;
+  font-size: large;
+}
+
+.nav-link-active{
+  font-style: Bold;
+  text-decoration: none;
+  background-color: aliceblue;
+  padding: 5px;
+  padding-top: 3px;
+  border-radius: 25%;
+  font-size: large;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
