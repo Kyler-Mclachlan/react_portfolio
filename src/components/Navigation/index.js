@@ -1,8 +1,11 @@
 import React from "react";
 
+
 function Navigation({ currentPage, handlePageChange }) {
     return (
-      <ul className="nav nav-tabs">
+      <nav className="nav">
+      <h1 className="webPage-title">Kyler Mclachlan</h1>
+      <ul className="nav-tabs">
         <li className="nav-item">
           <a
             href="#Projects"
@@ -45,6 +48,7 @@ function Navigation({ currentPage, handlePageChange }) {
           </a>
         </li>
       </ul>
+      </nav>
     );
   }
   

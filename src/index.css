@@ -11,3 +11,35 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.nav{
+  display: flex;
+  flex-direction: column;
+  background-color: lavender;
+  padding-bottom: 5px;
+}
+
+.nav-tabs{
+  display: flex;
+  font-style: Bold;
+  max-width: 100%;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: flex-start;
+  padding-right: 10%;
+  padding-left: 10%;
+  margin-top: -5px;
+}
+
+.webPage-title{
+  font-style: Bold;
+  font-size: 35px;
+  list-style-type: none;
+  align-self: center;
+  color: slateblue;
+}
+
+.nav-link{
+  text-decoration: none;
+  color: slateblue;
+}
