@@ -1,25 +1,47 @@
-import React from "react";
+import React, { useState } from 'react';
+import pic from "../../assets/0.PNG";
+// import photo from '../../assets'
+export default function Project() {
 
-export default function ProjectPage() {
-    return (
-      <div>
-        <h1>PortfolioC</h1>
-        <p>
-          Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
-          Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
-          dictum. Ut vel ante eget massa ornare placerat. Etiam nisl orci, finibus
-          sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum nunc,
-          sed pretium risus rutrum eget. Nam consequat, ligula in faucibus
-          vestibulum, nisi justo laoreet risus, luctus luctus mi lacus sit amet
-          libero. Class aptent taciti sociosqu ad litora torquent per conubia
-          nostra, per inceptos himenaeos. Mauris pretium condimentum tellus eget
-          lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-          Donec placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum
-          in velit pellentesque vehicula sit amet at augue. Maecenas aliquam
-          bibendum congue. Pellentesque semper, lectus non ullamcorper iaculis,
-          est ligula suscipit velit, sed bibendum turpis dui in sapien.
-        </p>
-      </div>
-    );
-  }
-  
+  const [projects] = useState([
+    {
+    //   title: "FavMates",
+    //   link: "https://lit-mountain-78827.herokuapp.com/",
+    // },
+    // {
+      title: "SEO Optimization",
+      link: "https://github.com/Kyler-Mclachlan/Horiseon-SEO-and-Accessibility-Optimization",
+    },
+    {
+      title: "Concert Scout",
+      link: "https://austinslatey.github.io/concert-scout/",
+    }
+    // {
+    //   title: "Note Taker",
+    //   link: "https://blooming-citadel-90751.herokuapp.com/",
+    // },
+    // {
+    //   title: "PWA",
+    //   link: "https://lychee-cobbler-55273.herokuapp.com/",
+    // },
+    // {
+    //   title: "Tech Blog",
+    //   link: "https://afternoon-mountain-91825.herokuapp.com/",
+    // }
+  ]);
+
+
+  return (
+    //method 1
+    <div className="project">
+    {projects.map((image, i) => (
+      <img
+        src={require(`../../assets/${i}.PNG`)}
+        alt={image.title}
+        key={image.title}
+      />
+    ))}
+    {/* method 2 */}
+  </div>
+  );
+};
