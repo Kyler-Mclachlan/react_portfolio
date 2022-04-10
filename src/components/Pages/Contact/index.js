@@ -54,8 +54,7 @@ function Contact() {
   };
 
   return (
-    <div>
-      <p>Hello {userName}</p>
+    <div className='formParent'>
       <form className="form">
         <input
           value={email}
@@ -78,7 +77,7 @@ function Contact() {
           type="password"
           placeholder="Password"
         />
-        <button type="button" onClick={handleFormSubmit}>Submit</button>
+        <button className='formButton' type="button" onClick={handleFormSubmit}>Submit</button>
       </form>
       {errorMessage && (
         <div>

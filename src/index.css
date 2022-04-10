@@ -37,7 +37,7 @@ code {
   list-style-type: none;
   align-self: center;
   color: slateblue;
-  background-color: aliceblue;
+  background-color: rgba(240, 248, 255, 0.427);
   padding: 22px;
   padding-top: 2px;
   padding-bottom: 7px;
@@ -86,4 +86,14 @@ code {
     height: 50%;
     padding-right: 10px;
   }
+}
+.form {
+  margin: 20px;
+}
+
+.form input {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 100%;
 }
