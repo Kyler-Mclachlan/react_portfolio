@@ -89,7 +89,6 @@ code {
 }
 .form {
   margin: 20px;
-  color: aqua;
 }
 
 .form input {
@@ -105,7 +104,7 @@ code {
 }
 
 .aboutMe{
-  display: flex;
+display: flex;
  justify-content: center;
  flex-direction: column;
  text-align: center;
