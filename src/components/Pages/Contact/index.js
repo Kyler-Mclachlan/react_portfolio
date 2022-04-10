@@ -61,7 +61,7 @@ function Contact() {
         setErrorMessage('Name is required');
       }
       else if (inputType === 'password'){
-        setErrorMessage('Password is required');
+        setErrorMessage('Message is required');
       }
    }
    if (inputValue !== ''){
@@ -98,7 +98,7 @@ function Contact() {
           name="password"
           onChange={handleInputChange}
           type="password"
-          placeholder="Password"
+          placeholder="Message"
           onMouseLeave={checkInputs}
         />
         <button className='formButton' type="button" onClick={handleFormSubmit}>Submit</button>

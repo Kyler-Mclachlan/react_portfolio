@@ -2,21 +2,62 @@ import React from "react";
 
 export default function Resume() {
     return (
-      <div>
-        <h1>Resume</h1>
-        <p>
-          Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-          molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-          magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-          efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-          mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-          posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-          faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-          ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-          dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-          conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-          rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-        </p>
+      <div className="resumeParent">
+        <div>
+        <p className="ResumeTitle">Resume</p>
+        <a className="resumeDownloadLink"
+        href="./Kyler_McLachlan_Resume_2020.pdf"
+        download
+      >
+        Click here to download my resume
+      </a>
+      <p className="ResumeTitle">
+        Front-End proficiencies
+        <ul className="ResumeTitleFrontEnd" >
+          <li>
+            HTML
+          </li>
+          <li>
+            CSS
+          </li>
+          <li>
+            JavaScript
+          </li>
+          <li>
+            Responsive Design
+          </li>
+          <li>
+            React
+          </li>
+          <li>
+            Bootstrap
+          </li>
+        </ul>
+      </p>
+      <p className="ResumeTitle">
+        Back-End proficiencies
+        <ul className="ResumeTitleBackEnd" >
+          <li>
+            APIs
+          </li>
+          <li>
+            Node
+          </li>
+          <li>
+            Express
+          </li>
+          <li>
+            MySQL
+          </li>
+          <li>
+            Sequelize
+          </li>
+          <li>
+            Mongo
+          </li>
+        </ul>
+      </p>
+        </div>
       </div>
     );
   }
