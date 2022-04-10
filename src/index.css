@@ -68,16 +68,22 @@ code {
   flex-wrap: wrap;
   flex-direction: row;
 }
-
-.projectItem{
-  width: 20%;
-  height: 10%;
-  padding-right: 10px;
+.projectTitle{
+  top: 8px;
+  color: lavender;
+  text-align: center;
 }
-@media only screen and (min-width: 300px) {
+.projectItem{
+    display:inline-block;
+    width: 20%;
+    height: 10%;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+@media only screen and (min-width: 300px) and (max-height: 850px) {
   .projectItem{
     width: 45%;
-    height: 55%;
+    height: 50%;
     padding-right: 10px;
   }
 }
