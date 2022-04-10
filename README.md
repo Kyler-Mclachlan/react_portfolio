@@ -1,3 +1,30 @@
+# React_Challenge
+# Description
+
+This project is the creators first effort in creating a portfolio website with a React Framework. 
+
+# Deploying
+
+If you wish to view the project simply click on the link below the image. Feel free to pull the repository (also linked below) if you wish to view the codebase. Thanks and please reach out to the email listed at the end of the document with any questions!
+
+# Link to Project
+
+https://github.com/Kyler-Mclachlan/react_portfolio
+
+# Link to Deployed Application
+
+https://kyler-mclachlan.github.io/react_portfolio/
+# Contributors 
+
+Kyler Mclachlan 
+
+
+# Questions 
+
+Any questions about the project may be sent to Kyler.mclachlan@gmail.com
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
