@@ -34,16 +34,11 @@ function Contact() {
 
     // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
     if (!validateEmail(email) || !userName) {
-      setErrorMessage('Email or username is invalid');
+      setErrorMessage('Email is invalid');
       // We want to exit out of this code block if something is wrong so that the user can correct it
       return;
       // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
-    }
-    if (!checkPassword(password)) {
-      setErrorMessage(
-        `Choose a more secure password for the account: ${userName}`
-      );
-      return;
+  
     }
     alert(`Hello ${userName}`);
 
@@ -52,6 +47,32 @@ function Contact() {
     setPassword('');
     setEmail('');
   };
+
+  const checkInputs = (e) => {
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
+
+    if (inputValue === ''){
+      if (inputType === 'email'){
+        setErrorMessage('Email is required');
+      }
+      else if (inputType === 'userName'){
+        setErrorMessage('Name is required');
+      }
+      else if (inputType === 'password'){
+        setErrorMessage('Password is required');
+      }
+   }
+   if (inputValue !== ''){
+    if (inputType === 'email'){
+    setEmail(inputValue)
+    if (!validateEmail(email) || !userName) {
+      setErrorMessage('Email is invalid');
+        }
+      }  
+    }
+  }
 
   return (
     <div className='formParent'>
@@ -62,13 +83,15 @@ function Contact() {
           onChange={handleInputChange}
           type="email"
           placeholder="email"
+          onMouseLeave={checkInputs}
         />
         <input
           value={userName}
           name="userName"
           onChange={handleInputChange}
           type="text"
-          placeholder="username"
+          placeholder="name"
+          onMouseLeave={checkInputs}
         />
         <input
           value={password}
@@ -76,6 +99,7 @@ function Contact() {
           onChange={handleInputChange}
           type="password"
           placeholder="Password"
+          onMouseLeave={checkInputs}
         />
         <button className='formButton' type="button" onClick={handleFormSubmit}>Submit</button>
       </form>

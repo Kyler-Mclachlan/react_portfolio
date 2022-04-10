@@ -11,6 +11,7 @@ import {
 const Footer = () => {
   return (
     <Box>
+      <Container>
       <h1 style={{ color: "SlateGrey", 
                    textAlign: "center", 
                    fontSize: "15px",
@@ -22,14 +23,15 @@ const Footer = () => {
         
           <div style={{ display: "Flex",
                     fontSize: "10px", 
-                   justifyContent: "center", 
+                   justifyContent: "center",
+                   marginLeft:"-25px", 
                     }}>
             <FooterLink href="https://www.linkedin.com/in/kyler-mclachlan/">LinkedIn</FooterLink>
             <FooterLink href="#">Github</FooterLink>
             <FooterLink href="#">MyEsri</FooterLink>
             </div>
         
-      
+            </Container>
     </Box>
   );
 };

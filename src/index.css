@@ -89,6 +89,7 @@ code {
 }
 .form {
   margin: 20px;
+  color: aqua;
 }
 
 .form input {
@@ -96,4 +97,36 @@ code {
   margin-top: 5px;
   margin-bottom: 5px;
   width: 100%;
+  color: rgb(65, 13, 65);
+}
+
+.aboutmeHeader{
+  color: rgb(171, 171, 251);
+}
+
+.aboutMe{
+  display: flex;
+ justify-content: center;
+ flex-direction: column;
+ text-align: center;
+}
+
+.proPic{
+  align-self: center;
+  border-radius: 50%;
+  background-color: lavender;
+  padding: 50px;
+}
+
+.bio{
+  width: 55%;
+  align-self: center;
+  padding-top: 5px;
+}
+
+.error-text{
+  align-self: center;
+  margin-top: 265px;
+  padding-left: -10px;
+  display: flex;
 }
