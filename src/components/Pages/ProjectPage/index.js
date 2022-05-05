@@ -23,9 +23,9 @@ export default function Project() {
       githubLink: "https://github.com/Kyler-Mclachlan/Tech-Blog"
     },
     {
-      title: "SEO Optimization",
-      link: "https://github.com/Kyler-Mclachlan/Horiseon-SEO-and-Accessibility-Optimization",
-      githubLink: "https://github.com/Kyler-Mclachlan/Horiseon-SEO-and-Accessibility-Optimization"
+      title: "RecipEase",
+      link: "https://thebestrecipease.herokuapp.com/",
+      githubLink: "https://github.com/austinslatey/RecipEase"
     },
     {
       title: "PWA",
